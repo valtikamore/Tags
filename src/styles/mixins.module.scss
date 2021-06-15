@@ -1,0 +1,19 @@
+@import 'variables.module';
+
+@mixin gridContainer($maxGridWidth, $gradient) {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1.2rem;
+  max-width: $maxGridWidth;
+  margin: 0 auto;
+  padding: 0;
+  background: $gradient
+}
+@mixin flex($alighItems,$justifyContent,$direction) {
+  display: flex;
+  align-items: $alighItems;
+  justify-content: $justifyContent;
+  flex-direction: $direction;
+}
+
+
